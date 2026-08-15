@@ -850,69 +850,6 @@ section h2 {
 }
 
 /* ======================================================
-   FINANCE / CHART
-====================================================== */
-.chart-wrap {
-  background: var(--bg-soft);
-  border-radius: var(--radius-lg);
-  padding: 44px 34px 20px;
-}
-
-.bar-chart {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 18px;
-  height: 260px;
-}
-
-.bar-item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 100%;
-}
-
-.bar {
-  width: 100%;
-  max-width: 68px;
-  height: 0%;
-  background: linear-gradient(
-    180deg,
-    var(--accent) 0%,
-    var(--accent-deep) 100%
-  );
-  border-radius: 8px 8px 0 0;
-  position: relative;
-  transition: height 1.1s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.bar-chart.in-view .bar {
-  height: calc(var(--val) * 1%);
-}
-
-.bar::before {
-  content: attr(data-value);
-  position: absolute;
-  top: -28px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--ink);
-  white-space: nowrap;
-}
-
-.bar-label {
-  margin-top: 14px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  font-weight: 600;
-}
-
-/* ======================================================
    EQUIPMENT
 ====================================================== */
 .equipment-grid {
