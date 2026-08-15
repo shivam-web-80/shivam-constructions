@@ -7,11 +7,18 @@
     <title>Shivam Constructions | Road & Infrastructure Contractor</title>
     <meta
       name="description"
-      content="M/s Shivam Constructions is a road construction and civil infrastructure firm delivering government and private projects across Uttar Pradesh."
+      content="M/s Shivam Constructions is a road construction and civil infrastructure firm delivering government and private projects across Uttar Pradesh and Madhya Pradesh since 2014."
     />
     <link rel="icon" href="/favicon-v2.png" type="image/png" />
     <link rel="shortcut icon" href="/favicon-v2.png" type="image/png" />
     <link rel="apple-touch-icon" href="/favicon-v2.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -21,19 +28,32 @@
     <header class="navbar">
       <div class="nav-container">
         <!-- BRAND -->
-        <div class="brand">
+        <a class="brand" href="#home">
           <img src="logo.png" alt="Shivam Constructions Logo" />
           <span>Shivam Constructions</span>
-        </div>
+        </a>
 
         <!-- NAVIGATION -->
-        <nav class="nav-links">
+        <nav class="nav-links" id="navLinks">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#progress">Site Progress</a>
+          <a href="#contact" class="nav-cta">Contact</a>
         </nav>
+
+        <!-- HAMBURGER -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
 
@@ -57,113 +77,208 @@
       ></div>
 
       <div class="hero-content">
+        <span class="hero-eyebrow"
+          >M/s Shivam Constructions &middot; Est. 2014</span
+        >
         <h1>
           Building Roads.<br />
           Shaping Infrastructure.
         </h1>
         <p>
-          M/s Shivam Constructions is a proprietorship firm delivering
-          high-quality road construction and civil infrastructure services
-          across Uttar Pradesh and Madhya Pradesh.
+          A proprietorship firm delivering high-quality road construction and
+          civil infrastructure works across Uttar Pradesh and Madhya Pradesh
+          &mdash; on time, on specification, every time.
         </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Our Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="stats-strip" aria-label="Firm summary">
+      <div class="stats-container">
+        <div class="stat">
+          <span class="stat-number">2014</span>
+          <span class="stat-label">Firm Established</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Major Projects Delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Districts of Operation</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Government Client Bodies</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">₹7.1Cr+</span>
+          <span class="stat-label">Largest Project Value</span>
+        </div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-      <div class="about-container">
-        <h2>About Us</h2>
+      <div class="about-grid">
+        <div class="about-container">
+          <span class="eyebrow">About the Firm</span>
+          <h2>About Us</h2>
 
-        <p>
-          M/s Shivam Constructions is a proprietorship construction firm
-          established in 2014, owned and managed by
-          <strong>Mr. Balkishan Sharma</strong>. The firm specializes in road
-          construction and civil infrastructure works, with a strong focus on
-          quality execution and timely project delivery.
-        </p>
+          <p>
+            M/s Shivam Constructions is a proprietorship construction firm
+            established in 2014, owned and managed by
+            <strong>Mr. Bal Kishan Sharma</strong>. The firm specializes in road
+            construction and civil infrastructure works, with a strong focus on
+            quality execution and timely project delivery.
+          </p>
 
-        <p>
-          Under the leadership of Mr. Balkishan Sharma, the firm has
-          successfully executed multiple government projects across Mathura,
-          Vrindavan, Hathras (Uttar Pradesh), and Ashok Nagar (Madhya Pradesh).
-          The firm has built a reputation for reliable workmanship and
-          compliance with approved technical specifications.
-        </p>
+          <p>
+            Under the leadership of Mr. Bal Kishan Sharma, the firm has
+            successfully executed multiple government projects across Mathura,
+            Vrindavan, Hathras (Uttar Pradesh), and Ashok Nagar (Madhya
+            Pradesh). The firm has built a reputation for reliable workmanship
+            and compliance with approved technical specifications.
+          </p>
 
-        <p>
-          We have worked with various government bodies including the Public
-          Works Department (PWD), Nagar Nigam Mathura–Vrindavan, and Jal Kal
-          Vibhag. Our work focuses on delivering durable, safe, and high-quality
-          infrastructure while strictly following approved specifications and
-          timelines.
-        </p>
+          <p>
+            We have worked with several government bodies, including the Public
+            Works Department (PWD), Rural Engineering Department (RED), Jal Kal
+            Vibhag, Nagar Nigam Mathura&ndash;Vrindavan, and the Mathura
+            Vrindavan Vikas Pradhikaran. Our work focuses on delivering durable,
+            safe, and high-quality infrastructure while strictly following
+            approved specifications, safety norms, and timelines.
+          </p>
 
-        <h4>Our Expertise</h4>
-        <ul>
-          <li>Asphalt (Bituminous) Road Construction</li>
-          <li>Cement Concrete (CC) Roads</li>
-          <li>Drainage & Sewer Works</li>
-          <li>Patch Repair & Special Road Repairs</li>
-        </ul>
+          <h4>Firm Registration &amp; Legal Details</h4>
+          <p>
+            M/s <strong>Shivam Constructions</strong> is a GST-registered
+            proprietorship firm operating in compliance with the applicable laws
+            and regulations of the Government of India.
+          </p>
+          <div class="legal-grid">
+            <div>
+              <span class="legal-label">Legal Name</span
+              ><span>Bal Kishan Sharma</span>
+            </div>
+            <div>
+              <span class="legal-label">Trade Name</span
+              ><span>M/s Shivam Constructions</span>
+            </div>
+            <div>
+              <span class="legal-label">Constitution</span
+              ><span>Proprietorship</span>
+            </div>
+            <div>
+              <span class="legal-label">GSTIN</span><span>09ASQPB9912J1Z9</span>
+            </div>
+            <div>
+              <span class="legal-label">Registration Type</span
+              ><span>Regular</span>
+            </div>
+            <div>
+              <span class="legal-label">GST Act</span
+              ><span>Uttar Pradesh GST Act, 2017</span>
+            </div>
+            <div>
+              <span class="legal-label">Jurisdictional Office</span
+              ><span>Mathura Sector-3</span>
+            </div>
+          </div>
+          <p class="legal-note">
+            The GST Registration Certificate has been issued by the competent
+            authority and is digitally generated through the Goods and Services
+            Tax Network (GSTN).
+          </p>
+        </div>
 
-        <h4>Operational Presence</h4>
-        <ul>
-          <li>Mathura & Vrindavan (Uttar Pradesh)</li>
-          <li>Hathras (Uttar Pradesh)</li>
-          <li>Ashok Nagar (Madhya Pradesh)</li>
-        </ul>
+        <aside class="about-side">
+          <div class="side-card">
+            <h4>Our Expertise</h4>
+            <ul class="check-list">
+              <li>Asphalt (Bituminous) Road Construction</li>
+              <li>Cement Concrete (CC) Roads</li>
+              <li>Drainage &amp; Sewer Works</li>
+              <li>Patch Repair &amp; Special Road Repairs</li>
+            </ul>
+          </div>
 
-        <h4>Why Choose Us</h4>
-        <ul>
-          <li>Established firm with government project experience</li>
-          <li>Execution of projects ranging from ₹1.20 Crore to ₹7+ Crore</li>
-          <li>
-            Use of approved materials such as VG-30 bitumen and M-30 concrete
-          </li>
-          <li>
-            Skilled engineers, machine operators, and safety-compliant workforce
-          </li>
-          <li>All completed works rated satisfactory by authorities</li>
-        </ul>
+          <div class="side-card">
+            <h4>Operational Presence</h4>
+            <ul class="check-list">
+              <li>Mathura &amp; Vrindavan (Uttar Pradesh)</li>
+              <li>Hathras (Uttar Pradesh)</li>
+              <li>Ashok Nagar (Madhya Pradesh)</li>
+            </ul>
+          </div>
 
-        <h4>Firm Registration & Legal Details</h4>
+          <div class="side-card side-card-dark">
+            <h4>Why Choose Us</h4>
+            <ul class="check-list check-list-dark">
+              <li>Established firm with government project experience</li>
+              <li>Projects executed from ₹1.20 Crore to ₹7.1+ Crore</li>
+              <li>
+                Approved materials such as VG-30 bitumen and M-30 concrete
+              </li>
+              <li>
+                Skilled engineers, machine operators &amp; safety-compliant
+                crews
+              </li>
+              <li>All completed works rated Satisfactory by authorities</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-        <p>
-          M/s <strong>Shivam Constructions</strong> is a GST-registered
-          proprietorship firm operating in compliance with the applicable laws
-          and regulations of the Government of India.
-        </p>
-
-        <ul>
-          <li><strong>Legal Name:</strong> Bal Kishan Sharma</li>
-          <li><strong>Trade Name:</strong> M/s Shivam Constructions</li>
-          <li><strong>Constitution of Business:</strong> Proprietorship</li>
-          <li>
-            <strong>GST Registration Number (GSTIN):</strong> 09ASQPB9912J1Z9
-          </li>
-          <li><strong>Type of Registration:</strong> Regular</li>
-          <li>
-            <strong>GST Act:</strong> Uttar Pradesh Goods and Services Tax Act,
-            2017
-          </li>
-          <li><strong>Jurisdictional Office:</strong> Mathura Sector-3</li>
-        </ul>
-
-        <p>
-          The GST Registration Certificate has been issued by the competent
-          authority and is digitally generated through the Goods and Services
-          Tax Network (GSTN).
-        </p>
+    <!-- VISION & MISSION -->
+    <section class="vision" id="vision">
+      <div class="vision-container">
+        <div class="vision-block">
+          <span class="eyebrow eyebrow-light">Where We're Headed</span>
+          <h2>Vision</h2>
+          <p>
+            To become one of the most trusted and respected construction firms
+            by delivering high-quality infrastructure projects with innovation,
+            integrity, and excellence.
+          </p>
+        </div>
+        <div class="mission-block">
+          <span class="eyebrow eyebrow-light">How We Get There</span>
+          <h2>Mission</h2>
+          <ul class="mission-list">
+            <li>Deliver every project on time without compromising quality.</li>
+            <li>
+              Maintain complete transparency and professionalism in every
+              assignment.
+            </li>
+            <li>Use quality materials and modern construction techniques.</li>
+            <li>
+              Ensure safety, customer satisfaction, and sustainable development.
+            </li>
+            <li>
+              Build long-term relationships with clients through reliable
+              service.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <!-- SERVICES -->
     <section class="services" id="services">
+      <span class="eyebrow">What We Do</span>
       <h2>Our Services</h2>
 
       <div class="services-grid">
         <div class="service-card">
+          <div class="service-icon" aria-hidden="true">01</div>
           <h3>Road Construction</h3>
           <p>
             Construction of asphalt and cement concrete roads using approved
@@ -172,7 +287,8 @@
         </div>
 
         <div class="service-card">
-          <h3>Earthwork & Site Preparation</h3>
+          <div class="service-icon" aria-hidden="true">02</div>
+          <h3>Earthwork &amp; Site Preparation</h3>
           <p>
             Site leveling, excavation, and groundwork to ensure strong
             foundations for long-lasting infrastructure.
@@ -180,7 +296,8 @@
         </div>
 
         <div class="service-card">
-          <h3>Drainage & Side Structures</h3>
+          <div class="service-icon" aria-hidden="true">03</div>
+          <h3>Drainage &amp; Side Structures</h3>
           <p>
             Construction of drainage systems, culverts, and side structures for
             effective water management.
@@ -188,7 +305,8 @@
         </div>
 
         <div class="service-card">
-          <h3>Road Repair & Maintenance</h3>
+          <div class="service-icon" aria-hidden="true">04</div>
+          <h3>Road Repair &amp; Maintenance</h3>
           <p>
             Patch repair, resurfacing, and maintenance works to improve road
             safety and durability.
@@ -199,88 +317,367 @@
 
     <!-- PROJECTS -->
     <section class="projects" id="projects">
-      <h2>Completed Project</h2>
+      <span class="eyebrow">Track Record</span>
+      <h2>Projects &amp; Experience</h2>
+      <p class="section-intro">
+        A cross-section of completed and ongoing works for government clients
+        across Uttar Pradesh and Madhya Pradesh.
+      </p>
 
-      <div class="project-box">
-        <h3>Construction of Commercial Market (Mandi)</h3>
-
-        <p>
-          M/s Shivam Constructions successfully executed the construction work
-          of a Commercial Market (Mandi) under the jurisdiction of Gram
-          Panchayat Ading, Development Block Govardhan, District Mathura. The
-          project involved comprehensive civil construction and infrastructure
-          development work in accordance with approved government
-          specifications.
-        </p>
+      <!-- FEATURED PROJECT -->
+      <div class="project-box featured-project">
+        <div class="featured-tag">Featured Project</div>
+        <h3>Construction of Commercial Market (Mandi), Adeeng</h3>
 
         <p>
-          The project was funded through State and Central Government grants and
-          was completed within the approved time period. The quality of work
-          execution was found to be satisfactory and compliant with prescribed
-          technical and safety standards.
+          M/s Shivam Constructions successfully executed the construction of a
+          Commercial Market (Mandi) under the jurisdiction of Gram Panchayat
+          Ading, Development Block Govardhan, District Mathura. The project
+          involved comprehensive civil construction and infrastructure
+          development in accordance with approved government specifications,
+          funded through State and Central Government grants, and was completed
+          within the approved time period with satisfactory execution quality.
         </p>
 
-        <h4>Key Project Details</h4>
-        <ul>
-          <li>
-            <strong>Project Type:</strong> Commercial Market (Mandi)
-            Construction
-          </li>
-          <li><strong>Executing Firm:</strong> M/s Shivam Constructions</li>
-          <li><strong>Client Authority:</strong> Gram Panchayat Ading</li>
-          <li><strong>Development Block:</strong> Govardhan</li>
-          <li><strong>District:</strong> Mathura, Uttar Pradesh</li>
-          <li><strong>Work Order Date:</strong> 14 October 2023</li>
-          <li><strong>Completion Date:</strong> 14 October 2024</li>
-          <li><strong>Sanctioned Project Cost:</strong> ₹71,850,741</li>
-          <li>
-            <strong>Funding Source:</strong> State & Central Government Grants
-          </li>
-          <li><strong>Execution Quality:</strong> Satisfactory (Certified)</li>
-        </ul>
+        <div class="project-facts">
+          <div>
+            <span class="fact-label">Client Authority</span
+            ><span>Gram Panchayat Ading</span>
+          </div>
+          <div>
+            <span class="fact-label">Location</span
+            ><span>Govardhan Block, Mathura, U.P.</span>
+          </div>
+          <div>
+            <span class="fact-label">Work Order Date</span
+            ><span>14 Oct 2023</span>
+          </div>
+          <div>
+            <span class="fact-label">Completion Date</span
+            ><span>14 Oct 2024</span>
+          </div>
+          <div>
+            <span class="fact-label">Sanctioned Cost</span
+            ><span>₹7,18,50,741</span>
+          </div>
+          <div>
+            <span class="fact-label">Status</span
+            ><span class="status-pill status-completed"
+              >Satisfactory / Completed</span
+            >
+          </div>
+        </div>
 
         <!-- PROJECT IMAGES -->
         <div class="project-images">
           <div class="image-card">
             <img
-              src="images/mandi-before.jpeg"
-              alt="Mandi site before construction"
+              src="images/progress/mandi-1.jpg"
+              alt="Mandi site early foundation stage"
+              loading="lazy"
             />
-            <span>Before</span>
+            <span>Foundation Stage</span>
           </div>
 
           <div class="image-card">
             <img
-              src="images/mandi-after.jpeg"
-              alt="Mandi site after construction"
+              src="images/progress/mandi-6.jpg"
+              alt="Mandi site completed shops"
+              loading="lazy"
             />
-            <span>After</span>
+            <span>Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="project-filters" role="tablist" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">
+          All Projects
+        </button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+      </div>
+
+      <!-- PROJECT GRID -->
+      <div class="project-grid">
+        <article class="mini-card" data-status="completed">
+          <div class="mini-card-head">
+            <h4>Road: Bjori to Richha</h4>
+            <span class="status-pill status-completed">Completed</span>
+          </div>
+          <p class="mini-client">
+            Public Works Department &middot; Ashoknagar, M.P.
+          </p>
+          <ul class="mini-facts">
+            <li><span>Length</span><span>1.50 KM</span></li>
+            <li><span>Value</span><span>₹135.33 Lakhs</span></li>
+            <li><span>Completed</span><span>20 Sep 2024</span></li>
+          </ul>
+        </article>
+
+        <article class="mini-card" data-status="completed">
+          <div class="mini-card-head">
+            <h4>Road: Semarkhedi Kirola to Fajalpur</h4>
+            <span class="status-pill status-completed">Completed</span>
+          </div>
+          <p class="mini-client">
+            Public Works Department &middot; Ashoknagar, M.P.
+          </p>
+          <ul class="mini-facts">
+            <li><span>Length</span><span>1.20 KM</span></li>
+            <li><span>Value</span><span>₹60.20 Lakhs</span></li>
+            <li><span>Completed</span><span>06 Oct 2023</span></li>
+          </ul>
+        </article>
+
+        <article class="mini-card" data-status="completed">
+          <div class="mini-card-head">
+            <h4>Sewer Drain, Tarash Mandir Colony</h4>
+            <span class="status-pill status-completed">Completed</span>
+          </div>
+          <p class="mini-client">
+            Nagar Nigam Mathura Vrindavan &middot; Vrindavan, U.P.
+          </p>
+          <ul class="mini-facts">
+            <li>
+              <span>Scope</span
+              ><span>Saraswat Seva Sadan &rarr; Vasudev Gas Agency</span>
+            </li>
+            <li><span>Project Value</span><span>₹47.16 Lakhs</span></li>
+            <li><span>Completed</span><span>16 Jan 2026</span></li>
+          </ul>
+        </article>
+
+        <article class="mini-card" data-status="completed">
+          <div class="mini-card-head">
+            <h4>Approach Road, NH-44 to Kota Village</h4>
+            <span class="status-pill status-completed">Completed</span>
+          </div>
+          <p class="mini-client">
+            Mathura Vrindavan Vikas Pradhikaran &middot; Mathura, U.P.
+          </p>
+          <ul class="mini-facts">
+            <li><span>Work Type</span><span>C.C. Road</span></li>
+            <li><span>Contract Value</span><span>₹43.93 Lakhs</span></li>
+            <li><span>Awarded</span><span>10 Mar 2026</span></li>
+          </ul>
+        </article>
+
+        <article class="mini-card" data-status="completed">
+          <div class="mini-card-head">
+            <h4>Special Repair: Magorra to Lathakuri Road</h4>
+            <span class="status-pill status-completed">Completed</span>
+          </div>
+          <p class="mini-client">
+            Public Works Department &middot; Mathura, U.P.
+          </p>
+          <ul class="mini-facts">
+            <li><span>Contract Value</span><span>₹87.51 Lakhs</span></li>
+            <li><span>Estimated Cost</span><span>₹103.09 Lakhs</span></li>
+            <li><span>Started</span><span>21 Feb 2026</span></li>
+          </ul>
+        </article>
+
+        <article class="mini-card" data-status="ongoing">
+          <div class="mini-card-head">
+            <h4>Drain Repair, Interlocking &amp; C.C. Road &mdash; Ward 09</h4>
+            <span class="status-pill status-ongoing">Ongoing</span>
+          </div>
+          <p class="mini-client">
+            Nagar Nigam Mathura Vrindavan &middot; Vrindavan, U.P.
+          </p>
+          <ul class="mini-facts">
+            <li><span>Project Value</span><span>₹300.36 Lakhs</span></li>
+            <li><span>Started</span><span>20 Feb 2026</span></li>
+            <li><span>Scheduled Completion</span><span>21 Nov 2026</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- FINANCIAL TURNOVER -->
+    <section class="finance" id="finance">
+      <span class="eyebrow">Financial Standing</span>
+      <h2>Turnover &mdash; Last 5 Years</h2>
+      <div class="chart-wrap">
+        <div class="bar-chart" id="barChart">
+          <div class="bar-item">
+            <div class="bar" style="--val: 31" data-value="₹2.14 Cr"></div>
+            <span class="bar-label">2020-21</span>
+          </div>
+          <div class="bar-item">
+            <div class="bar" style="--val: 49" data-value="₹3.37 Cr"></div>
+            <span class="bar-label">2021-22</span>
+          </div>
+          <div class="bar-item">
+            <div class="bar" style="--val: 74" data-value="₹5.05 Cr"></div>
+            <span class="bar-label">2022-23</span>
+          </div>
+          <div class="bar-item">
+            <div class="bar" style="--val: 100" data-value="₹6.85 Cr"></div>
+            <span class="bar-label">2023-24</span>
+          </div>
+          <div class="bar-item">
+            <div class="bar" style="--val: 68" data-value="₹4.64 Cr"></div>
+            <span class="bar-label">2024-25</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- EQUIPMENT & RESOURCES -->
+    <section class="equipment" id="equipment">
+      <span class="eyebrow">Capability</span>
+      <h2>Equipment &amp; Resources</h2>
+      <div class="equipment-grid">
+        <div class="equipment-card">
+          <h4>Machinery</h4>
+          <p>
+            Road Rollers, Asphalt Pavers &amp; JCBs for earthwork and paving.
+          </p>
+        </div>
+        <div class="equipment-card">
+          <h4>Manpower</h4>
+          <p>Skilled engineers and trained machine operators on every site.</p>
+        </div>
+        <div class="equipment-card">
+          <h4>Materials</h4>
+          <p>
+            Approved-grade materials, including VG-30 bitumen and M-30 concrete.
+          </p>
+        </div>
+        <div class="equipment-card">
+          <h4>Site Safety</h4>
+          <p>Helmets, boots, gloves and full safety-compliant site protocol.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- SITE PROGRESS GALLERY -->
+    <section class="progress-gallery" id="progress">
+      <span class="eyebrow">From the Ground</span>
+      <h2>Site Progress</h2>
+      <p class="section-intro">
+        Photo documentation from active sites &mdash; foundation to finished
+        road.
+      </p>
+
+      <div class="gallery-tabs" role="tablist" aria-label="Select site">
+        <button class="gallery-tab active" data-gallery="mandi">
+          Adeeng Mandi, Mathura
+        </button>
+        <button class="gallery-tab" data-gallery="ashoknagar">
+          Ashoknagar, M.P.
+        </button>
+      </div>
+
+      <div class="gallery-grid" data-gallery-panel="mandi">
+        <img
+          src="images/progress/mandi-1.jpg"
+          alt="Adeeng Mandi progress stage 1: column foundation laid out"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/mandi-2.jpg"
+          alt="Adeeng Mandi progress stage 2: structural columns rising"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/mandi-3.jpg"
+          alt="Adeeng Mandi progress stage 5: reinforcement bar work"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/mandi-4.jpg"
+          alt="Adeeng Mandi progress stage 7: concrete flooring poured"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/mandi-5.jpg"
+          alt="Adeeng Mandi progress stage 8: site walkthrough with completed shop rows"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/mandi-6.jpg"
+          alt="Adeeng Mandi progress stage 9: completed market shops"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="gallery-grid" data-gallery-panel="ashoknagar" hidden>
+        <img
+          src="images/progress/ashoknagar-1.jpg"
+          alt="Ashoknagar progress stage 1: unformed dirt road"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/ashoknagar-2.jpg"
+          alt="Ashoknagar progress stage 2: workers laying concrete"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/ashoknagar-3.jpg"
+          alt="Ashoknagar progress stage 3: site inspection on formed road"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/ashoknagar-4.jpg"
+          alt="Ashoknagar progress stage 4: aggregate stockpile"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/ashoknagar-5.jpg"
+          alt="Ashoknagar progress stage 5: base course being laid"
+          loading="lazy"
+        />
+        <img
+          src="images/progress/ashoknagar-6.jpg"
+          alt="Ashoknagar progress stage 6: finished asphalt road with roller"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- CONTACT -->
     <section class="contact" id="contact">
+      <span class="eyebrow">Get In Touch</span>
       <h2>Contact Us</h2>
 
       <div class="contact-card">
         <div class="contact-item">
+          <span class="label">Registered Office</span>
+          <span
+            >Village &amp; Post &ndash; Palson, Tehsil &ndash; Govardhan, Distt.
+            Mathura (U.P.)</span
+          >
+        </div>
+
+        <div class="contact-item">
+          <span class="label">Proprietor</span>
+          <span>Shri Bal Kishan Sharma</span>
+        </div>
+
+        <div class="contact-item">
           <span class="label">Phone</span>
-          <a href="tel:+918802422693">+91 88024 22693</a>
+          <a href="tel:+919412777872">+91 94127 77872</a>
         </div>
 
         <div class="contact-item">
           <span class="label">Email</span>
-          <a href="mailto:shivamconstructions@gmail.com">
-            shivamconstructions@gmail.com
-          </a>
+          <a href="mailto:shivamconstructions@gmail.com"
+            >shivamconstructions@gmail.com</a
+          >
         </div>
 
         <div class="contact-item">
-          <span class="label">Firm</span>
-          <span>M/s Shivam Constructions (Proprietorship)</span>
+          <span class="label">Website</span>
+          <a
+            href="https://shivamconstructions.in"
+            target="_blank"
+            rel="noopener"
+            >shivamconstructions.in</a
+          >
         </div>
       </div>
     </section>
@@ -288,15 +685,6 @@
     <!-- FOOTER -->
     <footer>© 2026 Shivam Constructions. All rights reserved.</footer>
 
-    <script>
-      const slides = document.querySelectorAll(".hero-slide");
-      let currentSlide = 0;
-
-      setInterval(() => {
-        slides[currentSlide].classList.remove("active");
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add("active");
-      }, 5000);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
